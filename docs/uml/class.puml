@@ -1,0 +1,33 @@
+@startuml
+class Database {
+  - host: string
+  - user: string
+  - pass: string
+  - db_name: string
+  + getRequestInfo()
+  + sendResultInfoAsJson()
+  + returnWithError()
+  + returnWithInfo()
+}
+
+class Users {
+  - ID: int
+  - firstName: varchar
+  - lastName: varchar
+  - Login: varchar
+  - Password: varchar
+  + LoginAPI()
+}
+
+class Colors {
+  - ID: int
+  - Name: varchar
+  - UserID: int
+  + AddColorAPI()
+  + SearchColorsAPI()
+}
+
+Database <.. Users : executes queries
+Database <.. Colors : executes queries
+Users "1" -- "0..*" Colors : owns
+@enduml
