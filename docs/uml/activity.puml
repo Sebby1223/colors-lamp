@@ -1,0 +1,22 @@
+@startuml
+start
+:User accesses index.html;
+:Enter username and password;
+:Call Login API;
+
+if (Authentication successful?) then (yes)
+  :Load color management dashboard;
+  fork
+    :Type color name;
+    :Call AddColor API;
+    :Update Colors table;
+  fork again
+    :Type search string;
+    :Call SearchColors API;
+    :Display matching records;
+  end fork
+else (no)
+  :Display "No Records Found" error;
+endif
+stop
+@enduml
