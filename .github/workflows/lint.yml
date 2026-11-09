@@ -17,10 +17,10 @@ jobs:
           node-version: '20'
 
       - name: Lint HTML
-        run: npx --yes htmlhint "*.html"
+        run: npx --yes htmlhint "public/**/*.html"
 
       - name: Lint CSS
-        run: npx --yes stylelint "css/**/*.css"
+        run: npx --yes stylelint "public/**/*.css"
 
       - name: Lint JavaScript
-        run: npx --yes eslint@8 "js/**/*.js"
+        run: npx --yes eslint@8 "public/**/*.js"
