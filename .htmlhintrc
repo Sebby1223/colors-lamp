@@ -1,0 +1,6 @@
+{
+  "tag-pair": true,
+  "id-unique": true,
+  "src-not-empty": true,
+  "attr-no-duplication": true
+}
