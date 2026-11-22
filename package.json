@@ -1,0 +1,28 @@
+{
+  "name": "colors-lamp",
+  "version": "1.0.0",
+  "description": "A web application designed to demonstrate a LAMP stack architecture. It provides a frontend interface that communicates with a backend PHP API to retrieve and display colors.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebby1223/colors-lamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sebby1223/colors-lamp/issues"
+  },
+  "homepage": "https://github.com/Sebby1223/colors-lamp#readme",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2"
+  }
+}
